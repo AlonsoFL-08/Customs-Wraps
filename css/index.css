@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "futura md bt";
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: #000;
+}
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .hamburger {
+        display: block;
+
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 70px;
+        width: 100%;
+        background: #fff;
+        padding: 30px;
+        transition: 0.3s;
+    }
+    header #nav_check:checked ~ nav {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+    }
+    header nav ul li a {
+        margin: 5px 0;
+    }
+}
+
+
+
+.card {
+  overflow: hidden;
+}
+
+.card-img-top {
+  transition: transform 0.9s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
+}
+
+.card:hover .card-img-top:not(:hover) {
+  transition: transform 1s ease;
+  transform: scale(1);
+}
+
+
+
+
+
+
+    .contenedor {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+
+.contenedor img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.contenedor:hover img {
+    transform: scale(1.1);
+}
+
+.contenedor h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: white;
+}
+
+#navbar {
+    transition: top 0.3s ease-in-out;
+}
+
+
+#btn-inf{
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+
+
+
+.centered-div {
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transform-style: preserve-3d;
+  }
+
+
+  .textured-div {
+    background-image: url('textura.jpg');
+    background-size: cover;
+  }
+
+  .btn{
+    background-color: transparent;
+  }
+
+  #dia{
+    color: white;
+  }
+#noche{
+  color: black;
+}
+
+
+@keyframes jump {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-15px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .jumping-span {
+        display: inline-block;
+        animation: jump 0.9s infinite;
+    }
+  
+
+
+    @font-face {
+        font-family: colores2;
+        src: url(/assets/letras/colores.ttf);
+      }
+      
+      #nom2{
+        font-family: colores2;
+        font-size: 30px;
+        color: black;
+      }
+      
+      @media (min-width: 768px) {
+        #nom2{
+            font-size: 40px;
+            color: black;
+        }
+      }

@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "futura md bt";
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body.dark-mode {
+      background-color: #1D1D1D;
+      color: #fff;
+    }
+
+    body.dark-mode #card {
+    background-color: rgb(66, 66, 66);
+    color: #fff;
+}
+
+body.dark-mode #iconos {
+    color: #000000;
+}
+
+body.dark-mode #card .card-title {
+    color: #2FFFE4;
+}
+
+body.dark-mode #card .card-text {
+    color: #2FFFE4;
+}
+
+body.dark-mode #navbar {
+    background-color: rgb(66, 66, 66) !important;
+}
+
+body.dark-mode #navbar .navbar-brand,
+body.dark-mode #navbar .navbar-nav .nav-link {
+    color: #fff;
+}
+
+
+
+.card {
+  overflow: hidden;
+}
+
+.card-img-top {
+  transition: transform 0.9s ease; 
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
+}
+
+.card:hover .card-img-top:not(:hover) {
+  transition: transform 1s ease; 
+  transform: scale(1); 
+}
+
+.centered-div {
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transform-style: preserve-3d;
+  }
+
+
+  .textured-div {
+    background-image: url('textura.jpg');
+    background-size: cover;
+  }
+
+  .btn{
+    background-color: transparent;
+  }
+
+  #dia{
+    color: white;
+  }
+#noche{
+  color: black;
+}
+
+
+
+.btn-like img {
+  transition: transform 0.2s ease;
+}
+
+.btn-like.liked img {
+  transform: scale(1.2);
+}
+
+.card {
+  overflow: hidden; 
+}
+
+.card img.zoom {
+  transition: transform 0.3s ease;
+}
+
+.card:hover img.zoom {
+  transform: scale(1.1);
+}
+
+.card img.zoom:active {
+  transform: scale(1.1);
+}

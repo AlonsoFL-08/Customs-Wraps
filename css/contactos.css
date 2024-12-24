@@ -1,0 +1,150 @@
+       .info-box {
+            background-color: #f8f9fa;
+
+        }
+
+        .map-box {
+            background-color: #f8f9fa;
+       
+        }
+
+
+        form {
+        width: 300px;
+        margin: auto;
+    }
+
+    .field {
+        margin-bottom: 10px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        border-radius: 25px;
+        margin-top: 10px;
+    }
+
+    input[type="submit"] {
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+        .fondo {
+            background-color: #f8f9fa;
+            margin: 10px auto;
+            padding: 10px;
+            border-radius: 25px;
+            max-width: 800px;
+        }
+
+  .social-icon {
+    font-size: 25px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.whatsapp {
+    background-color: #3AC04C;
+}
+
+.instagram {
+    background-color: #db4370;
+}
+
+.facebook {
+    background-color: #0863f7;
+
+.youtube {
+    background-color: #f70000;
+}
+
+li{
+  list-style: none;
+  margin-top: 8px;
+}
+
+
+button {
+  font-family: inherit;
+  font-size: 20px;
+  background: royalblue;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  
+}
+
+button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+  transform: translateX(5em);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}}
